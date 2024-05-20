@@ -20,4 +20,5 @@ public class Servico {
     private String descricao;
     private String categoria;
     private Double valor;
+    private String img_url;
 }

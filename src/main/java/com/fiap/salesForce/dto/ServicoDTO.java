@@ -16,6 +16,7 @@ public class ServicoDTO {
     private String descricao;
     private String categoria;
     private Double valor;
+    private String img_url;
 
     public ServicoDTO(Servico servico) {
         this.id_servico = servico.getId_servico();
@@ -23,5 +24,6 @@ public class ServicoDTO {
         this.descricao = servico.getDescricao();
         this.categoria = servico.getCategoria();
         this.valor = servico.getValor();
+        this.img_url = servico.getImg_url();
     }
 }
