@@ -47,4 +47,14 @@ public class ControllerExceptionHandler {
 
         return ResponseEntity.status(status).body(error);
     }
+
+    @ExceptionHandler(IllegalArgumentException.class)
+    public ResponseEntity<CustomError> illegalArgument(IllegalArgumentException e, HttpServletRequest request) {
+        HttpStatus status = HttpStatus.UNPROCESSABLE_ENTITY;
+        CustomError error = new CustomError(Instant.now(), status.value(),
+                e.getMessage(),
+                request.getRequestURI());
+        return ResponseEntity.status(status).body(error);
+    }
+
 }
