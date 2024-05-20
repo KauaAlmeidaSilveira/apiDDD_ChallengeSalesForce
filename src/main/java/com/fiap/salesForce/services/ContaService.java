@@ -5,6 +5,7 @@ import com.fiap.salesForce.dto.PessoaDTO;
 import com.fiap.salesForce.dto.Register.ContaRegisterDTO;
 import com.fiap.salesForce.model.Conta;
 import com.fiap.salesForce.repositories.ContaRepository;
+import com.fiap.salesForce.services.exceptions.InvalidCredentialsException;
 import com.fiap.salesForce.services.exceptions.ResourceNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -47,7 +48,7 @@ public class ContaService {
             return new ContaResponseDTO(newUser);
         }
 
-        return null;
+        throw new InvalidCredentialsException("Email já cadastrado");
     }
 
     @Transactional(readOnly = true)
