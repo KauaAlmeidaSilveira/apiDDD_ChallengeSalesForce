@@ -35,29 +35,29 @@ INSERT INTO TB_PESSOA (NOME, APELIDO, TELEFONE, CELULAR, CARGO, RG, ID_ENDERECO,
 ('Bruno Lima', 'Bruninho', '987654330', '19987654330', 'Coordenador de Logística', '123456798', 5, 5);
 
 -- INSERT TB_SERVICO
---INSERT INTO TB_SERVICO (NOME, DESCRICAO, CATEGORIA, VALOR) VALUES
---('Customer 360', 'Plataforma de gestão de relacionamento com o cliente.', 'CRM', 1000.00);
+INSERT INTO TB_SERVICO (NOME, DESCRICAO, CATEGORIA, VALOR, IMG_URL) VALUES
+('Customer 360', 'Plataforma de gestão de relacionamento com o cliente.', 'CRM', 1000.00, 'https://www.salesforce.com/content/dam/web/global/svg-icons/placeholder11.svg');
 INSERT INTO TB_SERVICO (NOME, DESCRICAO, CATEGORIA, VALOR, IMG_URL) VALUES
 ('IA', 'Inteligência artificial para análise de dados e automação de processos.', 'IA', 1500.00, 'https://www.salesforce.com/content/dam/web/global/svg-icons/placeholder12.svg');
---INSERT INTO TB_SERVICO (NOME, DESCRICAO, CATEGORIA, VALOR) VALUES
---('Pequenas Empresas', 'Soluções personalizadas para pequenas empresas.', 'SMB', 800.00);
---INSERT INTO TB_SERVICO (NOME, DESCRICAO, CATEGORIA, VALOR) VALUES
---('Vendas', 'Ferramentas para gestão e automação de vendas.', 'CRM', 1200.00);
---INSERT INTO TB_SERVICO (NOME, DESCRICAO, CATEGORIA, VALOR) VALUES
---('Atendimento ao Cliente', 'Plataforma de atendimento ao cliente multicanal.', 'CRM', 1000.00);
---INSERT INTO TB_SERVICO (NOME, DESCRICAO, CATEGORIA, VALOR) VALUES
---('Marketing', 'Ferramentas para automação de marketing e análise de campanhas.', 'Marketing', 1300.00);
---INSERT INTO TB_SERVICO (NOME, DESCRICAO, CATEGORIA, VALOR) VALUES
---('Commerce', 'Soluções para comércio eletrônico e gestão de lojas virtuais.', 'Commerce', 1500.00);
---INSERT INTO TB_SERVICO (NOME, DESCRICAO, CATEGORIA, VALOR) VALUES
---('Data Cloud', 'Armazenamento e análise de grandes volumes de dados na nuvem.', 'Cloud', 2000.00);
---INSERT INTO TB_SERVICO (NOME, DESCRICAO, CATEGORIA, VALOR) VALUES
---('Tableau', 'Plataforma de visualização e análise de dados.', 'Analytics', 1800.00);
---INSERT INTO TB_SERVICO (NOME, DESCRICAO, CATEGORIA, VALOR) VALUES
---('Mulesoft', 'Integração de sistemas e APIs.', 'Integration', 1700.00);
---INSERT INTO TB_SERVICO (NOME, DESCRICAO, CATEGORIA, VALOR) VALUES
---('Slack', 'Ferramenta de comunicação empresarial.', 'Collaboration', 900.00);
---INSERT INTO TB_SERVICO (NOME, DESCRICAO, CATEGORIA, VALOR) VALUES
---('Plataforma Einstein 1', 'Inteligência artificial para análise preditiva e recomendações.', 'AI', 2000.00);
---INSERT INTO TB_SERVICO (NOME, DESCRICAO, CATEGORIA, VALOR) VALUES
---('Sustentabilidade', 'Soluções para gestão de sustentabilidade empresarial.', 'Sustainability', 1600.00);
+INSERT INTO TB_SERVICO (NOME, DESCRICAO, CATEGORIA, VALOR, IMG_URL) VALUES
+('Pequenas Empresas', 'Soluções personalizadas para pequenas empresas.', 'SMB', 800.00, 'https://www.salesforce.com/content/dam/web/global/svg-icons/product-smb-day.svg');
+INSERT INTO TB_SERVICO (NOME, DESCRICAO, CATEGORIA, VALOR, IMG_URL) VALUES
+('Vendas', 'Ferramentas para gestão e automação de vendas.', 'CRM', 1200.00, 'https://www.salesforce.com/content/dam/web/global/svg-icons/sales-day.svg');
+INSERT INTO TB_SERVICO (NOME, DESCRICAO, CATEGORIA, VALOR, IMG_URL) VALUES
+('Atendimento ao Cliente', 'Plataforma de atendimento ao cliente multicanal.', 'CRM', 1000.00, 'https://www.salesforce.com/content/dam/web/global/svg-icons/service-day.svg');
+INSERT INTO TB_SERVICO (NOME, DESCRICAO, CATEGORIA, VALOR, IMG_URL) VALUES
+('Marketing', 'Ferramentas para automação de marketing e análise de campanhas.', 'Marketing', 1300.00, 'https://www.salesforce.com/content/dam/web/global/svg-icons/marketing-day.svg');
+INSERT INTO TB_SERVICO (NOME, DESCRICAO, CATEGORIA, VALOR, IMG_URL) VALUES
+('Commerce', 'Soluções para comércio eletrônico e gestão de lojas virtuais.', 'Commerce', 1500.00, 'https://www.salesforce.com/content/dam/web/global/svg-icons/commerce-day.svg');
+INSERT INTO TB_SERVICO (NOME, DESCRICAO, CATEGORIA, VALOR, IMG_URL) VALUES
+('Data Cloud', 'Armazenamento e análise de grandes volumes de dados na nuvem.', 'Cloud', 2000.00, 'https://www.salesforce.com/content/dam/web/global/svg-icons/placeholder29.svg');
+INSERT INTO TB_SERVICO (NOME, DESCRICAO, CATEGORIA, VALOR, IMG_URL) VALUES
+('Tableau', 'Plataforma de visualização e análise de dados.', 'Analytics', 1800.00, 'https://www.salesforce.com/content/dam/web/global/svg-icons/placeholder1.svg');
+INSERT INTO TB_SERVICO (NOME, DESCRICAO, CATEGORIA, VALOR, IMG_URL) VALUES
+('Mulesoft', 'Integração de sistemas e APIs.', 'Integration', 1700.00, 'https://www.salesforce.com/content/dam/web/global/svg-icons/integration-day.svg');
+INSERT INTO TB_SERVICO (NOME, DESCRICAO, CATEGORIA, VALOR, IMG_URL) VALUES
+('Slack', 'Ferramenta de comunicação empresarial.', 'Collaboration', 900.00, 'https://www.salesforce.com/content/dam/web/global/svg-icons/placeholder13.svg');
+INSERT INTO TB_SERVICO (NOME, DESCRICAO, CATEGORIA, VALOR, IMG_URL) VALUES
+('Plataforma Einstein 1', 'Inteligência artificial para análise preditiva e recomendações.', 'AI', 2000.00, 'https://www.salesforce.com/content/dam/web/global/svg-icons/platform-day.svg');
+INSERT INTO TB_SERVICO (NOME, DESCRICAO, CATEGORIA, VALOR, IMG_URL) VALUES
+('Sustentabilidade', 'Soluções para gestão de sustentabilidade empresarial.', 'Sustainability', 1600.00, 'https://www.salesforce.com/content/dam/web/global/icons/product/products-sustainability-day.svg');
