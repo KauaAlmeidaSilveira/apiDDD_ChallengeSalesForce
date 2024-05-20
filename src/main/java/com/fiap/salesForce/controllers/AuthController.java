@@ -7,6 +7,7 @@ import com.fiap.salesForce.repositories.ContaRepository;
 import com.fiap.salesForce.security.TokenService;
 import com.fiap.salesForce.services.*;
 import com.fiap.salesForce.services.exceptions.ResourceNotFoundException;
+import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -38,7 +39,7 @@ public class AuthController {
     }
 
     @PostMapping("/register")
-    public ResponseEntity<ResponseDTO> register(@RequestBody RegisterRequestDTO body) {
+    public ResponseEntity<ResponseDTO> register(@Valid @RequestBody RegisterRequestDTO body) {
         return ResponseEntity.ok(authService.register(body));
     }
 

@@ -1,6 +1,8 @@
 package com.fiap.salesForce.dto.Register;
 
+import jakarta.validation.Valid;
+
 public record RegisterRequestDTO(
-        EnderecoRegisterDTO endereco, EmpresaRegisterDTO empresa,
-        PessoaRegisterDTO pessoa, ContaRegisterDTO conta
+        @Valid EnderecoRegisterDTO endereco, @Valid EmpresaRegisterDTO empresa,
+        @Valid PessoaRegisterDTO pessoa, @Valid ContaRegisterDTO conta
 ) {}
