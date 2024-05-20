@@ -10,7 +10,7 @@ public class CorsConfig implements WebMvcConfigurer {
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**")
                 .allowedOrigins("*")
-                .allowedOrigins("http://localhost:3000")
+                .allowedOrigins("https://front-end-challenge-sales-force.vercel.app")
                 .allowedHeaders("*")
                 .allowedMethods("GET", "PUT", "POST", "PATCH", "DELETE", "OPTIONS");
     }
